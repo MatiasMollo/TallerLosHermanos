@@ -1,0 +1,62 @@
+@charset "UTF-8";
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+    font-family: 'Roboto','Roboto Condensed', sans-serif;
+    background: #fff;
+    background-size: auto;
+    background-image: url('../imagenes/herramientas.jpg');
+}
+
+.titulo{
+  background-color: rgb(37, 128, 180);
+  padding:0.5em;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+.titulo h1{
+  font-size:2.5em;
+  margin-bottom:0.1em;
+}
+.titulo h4{
+  font-size: 1.3em;
+}
+
+#contenedor{
+    border:2px solid black;
+    background-color:rgb(37, 128, 180);
+    color:white;
+    display:flex;
+
+    flex-direction: column;
+
+    margin:8em auto 0;
+    padding:0.5em 1em;
+    max-width:35em;
+    text-align:center;
+    width:80%;
+    border-radius:0.2em;
+}
+
+#informacion{
+  font-size:100%;
+}
+
+#contenedor a{
+    color:#fff;
+    text-decoration:none;
+    border:2px solid black;
+    font-size:100%;
+    padding:0.8em;
+    width: fit-content;
+    margin: 1.5em auto 0.5em;
+    border-radius:0.2em;
+    background:linear-gradient(60deg,rgb(53, 46, 46) 50%,  rgb(24, 104, 150) 50.1%);
+}
+#contenedor a:hover{
+    background: linear-gradient(60deg,rgba(53, 46, 46, 0.920) 50%,  rgba(24, 104, 150, 0.920) 50.1%);
+}
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="estilos.css">
+    <title>Los Hermanos - Taller Mecanico</title>
+</head>
+<body>
+    <header>
+        <nav class="barraNavegacion">
+
+            <div class="titulo">
+                <h4>Taller mecanico</h4>
+                <h1>Los Hermanos</h1>
+            </div>
+            <button id="menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="menuNavegacion">
+                <div id="contenedorCerrar"><button id="cerrar"><i class="fas fa-times"></i></button></div>
+                <li><button id="botonInicio">Inicio</li>
+                <li><button id="botonServicios">Servicios</button></li>
+                <li><button id="botonLogros">Logros</button></li>
+                <li><button id="botonNosotros">Nosotros</button></li>
+                <li><button id="botonContacto">Contacto</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="fondo" id="inicio"></section>
+
+    <div class="tituloMedio">
+        <div><h1>Especialistas en restauraciones</h1></div>
+    </div>
+    <div class="instagram" id="servicios"><h4><a href="https://www.instagram.com/matiasmollo_/">Instagram</a></h4></div><!--id="SeriviciosPrueba" esta aca por la barra de navegacion que es sticky-->
+    <span class="iconoInstagram"><div><a href="https://www.instagram.com/matiasmollo_/"><i class="fab fa-instagram"></i></a></div></span>
+
+
+    <section class="servicios">
+        <div id="divServicios">
+            <h1>Servicios</h1>
+            <div class="descripcionServicios">
+                <div class="elemento">
+                    <i class="fas fa-toolbox"></i>
+                    <h2>Reparaciones</h2>
+                    <h3>Reparaciones generales, reparaciones especiales & partes antiguas</h3>
+                </div>
+                <div class="elemento">
+                    <i class="fas fa-tag"></i>
+                    <h2>Tapiceria</h2>
+                    <h3>Amplia variedad de telas, incluyendo cueros vintage, & muchas opciones de colores</h3>
+                </div>
+                <div class="elemento">
+                    <i class="fas fa-fill-drip"></i>
+                    <h2>Pintura</h2>
+                    <h3>Pintura en aerosol, Stencilling personalizado & amplia variedad de trabajo artesanal</h3>
+                </div>
+            </div>
+            <div id="logros"></div>
+        </div>
+    </section>
+    <section>
+        <div class="tituloFotos">
+            <h2>Logros</h2>
+            <span class="lineaLogros"></span>
+            <h3>Algunos de los autos en los que trabajamos</h3>
+        </div>
+        <div class="fotos">
+                <img src="autos/img4.jpg" alt="auto antiguo restaurado">
+                <img src="autos/img5.jpeg" alt="auto antiguo restaurado">
+                <img src="autos/img6.jpg" alt="auto antiguo restaurado">
+                <img src="autos/img1.jpg" alt="auto antiguo restaurado">
+                <img src="autos/img2.jpg" alt="auto antiguo restaurado">
+                <img src="autos/img3.jpg" alt="auto antiguo restaurado">
+        </div>
+    </section>
+    <div id="nosotros"></div>
+    <section class="sobreNosotros">
+        <div class="divSobreNosotros">
+            <h1>sobre nosotros</h1>
+            <span class="lineaSobreNosotros"></span>
+            <h3>Este es un taller familiar en donde llevamos más de 100 años trabajando en el rubro automotor, comenzamos en un pequeño garage con herramientas básicas, y poco a poco nos fuimos expandiendo hasta lo que somos hoy en día. Tenemos como fuerte las restauraciones, contamos con cabina de pintura y las herramientas correctas para todo tipo de trabajos</h3>
+        </div>
+    </section>
+    <div id="contacto"></div>
+    <section class="contacto">
+        <img src="imagenes/logoAuto.png" alt="auto antiguo restaurado">
+        <div class="centrarContacto">
+            <div class="divContacto">
+                <form method="POST" action="backend/contacto.php">
+                    <h1>Contacto</h1>
+                    <input type="text" name="nombre" placeholder="Nombre" autocomplete="off">
+                    <input type="email" name="correo" required placeholder="Email (obligatorio)">
+                    <input type="tel" name="telefono" placeholder="Teléfono" autocomplete="off">
+                    <textarea placeholder="Escribe un mensaje..." name="texto"></textarea>
+                    <input type="submit" name="enviar" id="enviar"><label for="enviar" id="labelEnviar">Enviar</label>
+                </form>
+                <div class="atencion">
+                    <h3>Este formulario es para contactar con el desarrollador. La página se realizó a modo de proyecto y no existe tal taller mecánico <br><br> Puede dejar sus datos o escribir a <a href="mailto:mollo.matias03@gmail.com">mollo.matias03@gmail.com</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <h3>&copy Matias Mollo - 2020</h3>
+    <a href="https://matiasmollo.herokuapp.com"><h4>Volver al portfolio</h4></a>
+</footer>
+<script src="menu.js"></script>
+</html>
