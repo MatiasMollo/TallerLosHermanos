@@ -1174,13 +1174,22 @@
     }
  
 }
+@media screen and (min-width:1500px){
+    .fotos{
+        width:55%;
+    }
+    .fotos img{
+        height:10em;
+    }
+}
 
 @media screen and (min-width:1800px){
     .fotos{
-        width:45%;
+        width:50%;
     }
     .fotos img{
         margin:auto;
+        height:12em;
     }
 }
 
@@ -1331,6 +1340,13 @@
     }
     footer h4{
         font-size:1.8em;
+    }
+
+    .fotos{
+        width:45%;
+    }
+    .fotos img{
+        height:15em;
     }
     
 
