@@ -2,6 +2,21 @@ const menu = document.getElementById('menuNavegacion');
 const abrir = document.getElementById('menu');
 const cerrar = document.getElementById('cerrar');
 
+let enviar = document.querySelector('#enviar');
+let mensajeForm = document.querySelector('.mensajeForm');
+
+//Temporalmente deshabilitado el formulario de contacto (Por cambio de hosting)
+enviar.addEventListener('click', e => {
+    e.preventDefault();
+    
+    mensajeForm.classList.add('visible');
+    
+    setTimeout(() => {
+        mensajeForm.classList.remove('visible');
+    }, 10000);
+
+})
+
 var elemento;
 
 abrir.addEventListener('click',abrirMenu);

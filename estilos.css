@@ -10,6 +10,18 @@
     box-sizing: border-box;
 }
 
+.mensajeForm{
+    color:red;
+    width:80%;
+    text-align: center;
+    font-size:100%;
+    margin:auto;
+    display:none;
+}
+.visible{
+    display:flex;
+}
+
 @media screen and (max-width:279px){
     .barraNavegacion{
         background: rgb(25, 122, 179);
